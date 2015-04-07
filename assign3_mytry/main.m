@@ -73,11 +73,20 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", model);
     }
     
-//Loops example
+//Loops example - While
+    
+    int modelYear = 1990;
     int i=0;
+    while (i<5) {
+        if (i ==3) {
+            NSLog(@"Aborting the while-loop");
+            break;
+        }
+        NSLog(@"Current year: %d", modelYear +1);
+        i++;
+        }
     
-    
-    
+
     
     
     return 0;
