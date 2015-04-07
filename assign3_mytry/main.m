@@ -75,7 +75,6 @@ int main(int argc, const char * argv[]) {
     
 //Loops example - While
     
-    int modelYear = 1990;
     int i=0;
     while (i<5) {
         if (i ==3) {
