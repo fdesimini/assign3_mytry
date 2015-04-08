@@ -68,11 +68,6 @@ int main(int argc, const char * argv[]) {
     }
     
     
-    NSArray *models = @[@"Ford", @"Honda", @"Nissan", @"Porsche"];
-    for (id model in models) {
-        NSLog(@"%@", model);
-    }
-    
 //Loops example - While
     
     int i=0;
@@ -81,11 +76,63 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Aborting the while-loop");
             break;
         }
-        NSLog(@"Current year: %d", modelYear +1);
+        NSLog(@"Current year: %d", modelYear +i);
         i++;
         }
     
+//Loops example - For
+    
+    for (int i=0; i<5; i++) {
+        if (i == 3) {
+            NSLog(@"Skipping a for-loop iteration");
+                  continue;
+                  }
+                  
+                  NSLog(@"Current year: %d", modelYear +i);
+    
+    }
 
+// For-in loops ("Fast-enumeration," specific to Objective-C)
+    
+    NSArray *models = @[@"Ford", @"Honda", @"Nissan", @"Porsche"];
+    for (id model in models) {
+        NSLog(@"%@", model);
+    }
+    
+ //Macros
+#define PI 3.14159
+#define RAD_TO_DEG(radians) (radians * (180 / PI))
+    
+    double angle = PI /2;
+    NSLog(@"%f", RAD_TO_DEG(angle));
+    
+    //Typedef example
+    
+    {
+    typedef unsigned char ColorComponent;
+    
+    ColorComponent red = 255;
+    ColorComponent green = 160;
+    ColorComponent blue = 0;
+    NSLog(@"Your paint job is (R: %hhu, G: %hhu, B: %hhu)", red, green, blue);
+    }
+    
+    //Struct example
+    
+    typedef struct {
+        unsigned char red;
+        unsigned char green;
+        unsigned char blue;
+        
+    }Color;
+    
+    {Color carColor = {255, 160, 0};
+        NSLog(@"Your paint job is (R: %hhu, G: %hhu, B: %hhu)", carColor.red, carColor.blue, carColor.green);
+    }
+    
+    //Enums
+    
+    
     
     
     return 0;
