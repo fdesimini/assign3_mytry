@@ -13,7 +13,7 @@
 /* this is a block of comments.
  It can spell multiple lines. */
 
-int main(int argc, const char * argv[]) {
+int main2(int argc, const char * argv[]) {
     @autoreleasepool {
         
         //Variables example
@@ -131,9 +131,72 @@ int main(int argc, const char * argv[]) {
     }
     
     //Enums
+    typedef enum {
+        FORD,
+        HONDA,
+        NISSAN,
+        PORSCHE
+    } CarModel;
     
+    {
+        CarModel myCar = NISSAN;
+        switch (myCar) {
+            case FORD:
+            case PORSCHE:
+                NSLog(@"You like Western cars?");
+                break;
+            case HONDA:
+            case NISSAN:
+                NSLog(@"You like Japanese cars?");
+                break;
+            default:
+                break;
+        }
+    }
     
+    //Primitive Arrays
+    int years[4] = {1968, 1970, 1989, 1999};
+    years[0]=1967;
+    for (int i=0; i<4; i++) {
+        NSLog(@"they year at index %d is: %d", i, years[i]);
+    }
     
+    //Pointers
+    int year = 1967;          // Define a normal variable
+    int *pointer;             // Declare a pointer that points to an int
+    pointer = &year;          // Find the memory address of the variable
+    NSLog(@"%d", *pointer);   // Dereference the address to get its value
+    *pointer = 1990;          // Assign a new value to the memory address
+    NSLog(@"%d", year);       // Access the value via the variable
+    
+    char model[5] = {'H', 'o', 'n', 'd', 'a'};
+    char *modelPointer = &model[0];
+    for (int i=0; i<5; i++) {
+        NSLog(@"Value at memory address %p is %c",
+              modelPointer, *modelPointer);
+        modelPointer++;
+    }
+    NSLog(@"The first letter is %c", *(modelPointer - 5));
+    
+    //Null Pointer
+   
+    NSLog(@"%d", *pointer);
+    pointer = nil;
+    
+    //Void Pointer
+   
+    void *genericPointer = &year;
+    int *intPointer = (int *)genericPointer;
+    NSLog(@"%d", *intPointer);
+    
+    //Pointers in objective C
+    
+    NSString *anObject;    // An Objective-C object
+    anObject = NULL;       // This will work
+    anObject = nil;        // But this is preferred
+    int *aPointer;         // A plain old C pointer
+    aPointer = nil;        // Don't do this
+    aPointer = NULL;       // Do this instead
     
     return 0;
 }

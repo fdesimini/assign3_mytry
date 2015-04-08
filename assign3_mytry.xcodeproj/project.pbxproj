@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398AC70A1AD5B47200D51B83 /* challenge2.m in Sources */ = {isa = PBXBuildFile; fileRef = 398AC7091AD5B47200D51B83 /* challenge2.m */; };
+		398AC70C1AD5B60200D51B83 /* challenge3.m in Sources */ = {isa = PBXBuildFile; fileRef = 398AC70B1AD5B60200D51B83 /* challenge3.m */; };
+		398AC70E1AD5B75000D51B83 /* challenge4.m in Sources */ = {isa = PBXBuildFile; fileRef = 398AC70D1AD5B75000D51B83 /* challenge4.m */; };
+		398AC7101AD5B83E00D51B83 /* challenge5.m in Sources */ = {isa = PBXBuildFile; fileRef = 398AC70F1AD5B83E00D51B83 /* challenge5.m */; };
+		398AC7121AD5B8C400D51B83 /* challenge6.m in Sources */ = {isa = PBXBuildFile; fileRef = 398AC7111AD5B8C400D51B83 /* challenge6.m */; };
 		39A9A41B1AD4436100EC9834 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A9A41A1AD4436100EC9834 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		398AC7091AD5B47200D51B83 /* challenge2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = challenge2.m; sourceTree = "<group>"; };
+		398AC70B1AD5B60200D51B83 /* challenge3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = challenge3.m; sourceTree = "<group>"; };
+		398AC70D1AD5B75000D51B83 /* challenge4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = challenge4.m; sourceTree = "<group>"; };
+		398AC70F1AD5B83E00D51B83 /* challenge5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = challenge5.m; sourceTree = "<group>"; };
+		398AC7111AD5B8C400D51B83 /* challenge6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = challenge6.m; sourceTree = "<group>"; };
 		39A9A4171AD4436100EC9834 /* assign3_mytry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = assign3_mytry; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A9A41A1AD4436100EC9834 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				39A9A41A1AD4436100EC9834 /* main.m */,
+				398AC7091AD5B47200D51B83 /* challenge2.m */,
+				398AC70B1AD5B60200D51B83 /* challenge3.m */,
+				398AC70D1AD5B75000D51B83 /* challenge4.m */,
+				398AC70F1AD5B83E00D51B83 /* challenge5.m */,
+				398AC7111AD5B8C400D51B83 /* challenge6.m */,
 			);
 			path = assign3_mytry;
 			sourceTree = "<group>";
@@ -118,7 +133,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398AC7101AD5B83E00D51B83 /* challenge5.m in Sources */,
+				398AC70A1AD5B47200D51B83 /* challenge2.m in Sources */,
+				398AC7121AD5B8C400D51B83 /* challenge6.m in Sources */,
 				39A9A41B1AD4436100EC9834 /* main.m in Sources */,
+				398AC70E1AD5B75000D51B83 /* challenge4.m in Sources */,
+				398AC70C1AD5B60200D51B83 /* challenge3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +252,7 @@
 				39A9A4201AD4436100EC9834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
